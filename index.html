@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soubhi Hadri - Senior AI/Data Scientist specializing in Computer Vision, LLMs, RAG Systems, and MLOps">
+    <title>Soubhi Hadri - Senior AI/Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="nav-logo">SH</div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#vision" class="nav-link">Vision</a>
+                <a href="#llm" class="nav-link">LLMs</a>
+                <a href="#mlops" class="nav-link">MLOps</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#publications" class="nav-link">Publications</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section: AI System Map -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-name">Soubhi Hadri</h1>
+            <p class="hero-title">Senior AI / Data Scientist</p>
+            <p class="hero-subtitle">Building enterprise-scale AI systems that bridge vision, language, and intelligence</p>
+            
+            <!-- AI System Map SVG -->
+            <div class="system-map">
+                <svg id="aiSystemMap" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Connections -->
+                    <g class="connections" stroke="#00d4ff" stroke-width="2" fill="none" opacity="0.3">
+                        <line x1="400" y1="300" x2="250" y2="150" class="connection" />
+                        <line x1="400" y1="300" x2="550" y2="150" class="connection" />
+                        <line x1="400" y1="300" x2="650" y2="300" class="connection" />
+                        <line x1="400" y1="300" x2="550" y2="450" class="connection" />
+                        <line x1="400" y1="300" x2="250" y2="450" class="connection" />
+                        <line x1="400" y1="300" x2="150" y2="300" class="connection" />
+                    </g>
+
+                    <!-- Animated Dots -->
+                    <g class="animated-dots">
+                        <circle r="4" fill="#00d4ff" opacity="0.8">
+                            <animateMotion dur="3s" repeatCount="indefinite">
+                                <mpath href="#path1"/>
+                            </animateMotion>
+                        </circle>
+                        <circle r="4" fill="#00d4ff" opacity="0.8">
+                            <animateMotion dur="3s" repeatCount="indefinite" begin="0.5s">
+                                <mpath href="#path2"/>
+                            </animateMotion>
+                        </circle>
+                        <circle r="4" fill="#00d4ff" opacity="0.8">
+                            <animateMotion dur="3s" repeatCount="indefinite" begin="1s">
+                                <mpath href="#path3"/>
+                            </animateMotion>
+                        </circle>
+                    </g>
+
+                    <!-- Hidden paths for animation -->
+                    <defs>
+                        <path id="path1" d="M 400 300 L 250 150" />
+                        <path id="path2" d="M 400 300 L 550 150" />
+                        <path id="path3" d="M 400 300 L 650 300" />
+                    </defs>
+
+                    <!-- Central Node -->
+                    <g class="node central-node" data-section="hero">
+                        <circle cx="400" cy="300" r="50" fill="#0a0a0f" stroke="#00d4ff" stroke-width="3"/>
+                        <text x="400" y="305" text-anchor="middle" fill="#e8e8f0" font-size="16" font-weight="600">AI System</text>
+                    </g>
+
+                    <!-- Surrounding Nodes -->
+                    <g class="node" data-section="vision">
+                        <circle cx="250" cy="150" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="250" y="155" text-anchor="middle" fill="#e8e8f0" font-size="14">Vision</text>
+                    </g>
+
+                    <g class="node" data-section="llm">
+                        <circle cx="550" cy="150" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="550" y="150" text-anchor="middle" fill="#e8e8f0" font-size="13">LLMs &</text>
+                        <text x="550" y="165" text-anchor="middle" fill="#e8e8f0" font-size="13">NLP</text>
+                    </g>
+
+                    <g class="node" data-section="projects">
+                        <circle cx="650" cy="300" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="650" y="300" text-anchor="middle" fill="#e8e8f0" font-size="13">Agents &</text>
+                        <text x="650" y="315" text-anchor="middle" fill="#e8e8f0" font-size="13">RAG</text>
+                    </g>
+
+                    <g class="node" data-section="mlops">
+                        <circle cx="550" cy="450" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="550" y="450" text-anchor="middle" fill="#e8e8f0" font-size="13">Systems &</text>
+                        <text x="550" y="465" text-anchor="middle" fill="#e8e8f0" font-size="13">MLOps</text>
+                    </g>
+
+                    <g class="node" data-section="publications">
+                        <circle cx="250" cy="450" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="250" y="455" text-anchor="middle" fill="#e8e8f0" font-size="14">Research</text>
+                    </g>
+
+                    <g class="node" data-section="experience">
+                        <circle cx="150" cy="300" r="40" fill="#0a0a0f" stroke="#00d4ff" stroke-width="2"/>
+                        <text x="150" y="305" text-anchor="middle" fill="#e8e8f0" font-size="14">Experience</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section (Input Layer) -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-label">// INPUT LAYER</div>
+            <h2 class="section-title">About</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assests/me.png" alt="Soubhi Hadri" />
+                </div>
+                <div class="about-text">
+                    <p>Senior AI/Data Scientist with deep expertise in building production-grade AI systems that span computer vision, large language models, and multimodal intelligence.</p>
+                    <p>I specialize in bridging research and engineering—transforming cutting-edge ML concepts into scalable, enterprise-ready solutions. From real-time vision systems to RAG-powered agents, I architect end-to-end AI pipelines that deliver measurable business impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vision Module Section -->
+    <section id="vision" class="section vision-section">
+        <div class="container">
+            <div class="section-label">// VISION MODULE</div>
+            <h2 class="section-title">Computer Vision</h2>
+            <div class="module-grid">
+                <div class="module-card">
+                    <div class="module-icon">👁️</div>
+                    <h3>Computer Vision</h3>
+                    <p>Deep learning-based object detection, segmentation, and tracking systems optimized for real-time performance.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">⚡</div>
+                    <h3>Real-time Systems</h3>
+                    <p>GPU-accelerated pipelines for low-latency video processing and real-time inference at scale.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🎨</div>
+                    <h3>GPU & WebGL</h3>
+                    <p>Hardware-optimized rendering and compute pipelines leveraging CUDA and WebGL for browser-based AI.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🔧</div>
+                    <h3>C++ / OpenCV / PCL</h3>
+                    <p>Low-level optimization with C++, OpenCV for image processing, and PCL for 3D point cloud analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Language & Reasoning Module Section -->
+    <section id="llm" class="section llm-section">
+        <div class="container">
+            <div class="section-label">// LANGUAGE & REASONING MODULE</div>
+            <h2 class="section-title">LLMs, RAG & Agents</h2>
+            <div class="module-grid">
+                <div class="module-card">
+                    <div class="module-icon">🤖</div>
+                    <h3>LLMs & Fine-tuning</h3>
+                    <p>Production deployment of large language models with custom fine-tuning for domain-specific tasks.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🔍</div>
+                    <h3>RAG Systems</h3>
+                    <p>Retrieval-Augmented Generation pipelines with vector databases and semantic search for enterprise knowledge.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🎯</div>
+                    <h3>AI Agents</h3>
+                    <p>Autonomous agents with tool use, memory, and planning capabilities for complex multi-step tasks.</p>
+                </div>
+                <div class="module-card">
+                    <div class="module-icon">🌐</div>
+                    <h3>Multimodal AI</h3>
+                    <p>Systems that combine vision and language for document understanding, visual QA, and cross-modal retrieval.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Systems & MLOps Module Section -->
+    <section id="mlops" class="section mlops-section">
+        <div class="container">
+            <div class="section-label">// SYSTEMS & MLOPS MODULE</div>
+            <h2 class="section-title">End-to-End AI Pipelines</h2>
+            <div class="pipeline-flow">
+                <div class="pipeline-stage">
+                    <div class="stage-number">01</div>
+                    <h3>Data Engineering</h3>
+                    <p>ETL pipelines, data validation, and feature stores</p>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-stage">
+                    <div class="stage-number">02</div>
+                    <h3>Model Development</h3>
+                    <p>Experimentation, training, and hyperparameter tuning</p>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-stage">
+                    <div class="stage-number">03</div>
+                    <h3>CI/CD & Deployment</h3>
+                    <p>Automated testing, containerization, and orchestration</p>
+                </div>
+                <div class="pipeline-arrow">→</div>
+                <div class="pipeline-stage">
+                    <div class="stage-number">04</div>
+                    <h3>Monitoring & Ops</h3>
+                    <p>Performance tracking, drift detection, and retraining</p>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <span class="tech-badge">Azure</span>
+                <span class="tech-badge">AWS</span>
+                <span class="tech-badge">Databricks</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Kubernetes</span>
+                <span class="tech-badge">MLflow</span>
+                <span class="tech-badge">Airflow</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section (Impact) -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-label">// IMPACT</div>
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-phase">
+                <h3 class="phase-title">Enterprise & Scale</h3>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h4>Senior AI/Data Scientist</h4>
+                        <span class="experience-company">Enterprise AI</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-item">
+                            <strong>Problem:</strong> Manual document processing bottleneck
+                        </div>
+                        <div class="experience-item">
+                            <strong>Solution:</strong> Built multimodal RAG system with GPT-4V for automated document understanding
+                        </div>
+                        <div class="experience-item">
+                            <strong>Tech:</strong> <span class="tech-badge-sm">Python</span> <span class="tech-badge-sm">LangChain</span> <span class="tech-badge-sm">Vector DBs</span> <span class="tech-badge-sm">Azure</span>
+                        </div>
+                        <div class="experience-item">
+                            <strong>Outcome:</strong> 80% reduction in processing time, deployed to production serving 1M+ documents
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-phase">
+                <h3 class="phase-title">Specialization</h3>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h4>Computer Vision Engineer</h4>
+                        <span class="experience-company">AR/VR Startup</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-item">
+                            <strong>Problem:</strong> Real-time facial landmark detection for AR makeup
+                        </div>
+                        <div class="experience-item">
+                            <strong>Solution:</strong> Optimized deep learning models for mobile deployment with WebGL rendering
+                        </div>
+                        <div class="experience-item">
+                            <strong>Tech:</strong> <span class="tech-badge-sm">TensorFlow</span> <span class="tech-badge-sm">OpenCV</span> <span class="tech-badge-sm">WebGL</span> <span class="tech-badge-sm">C++</span>
+                        </div>
+                        <div class="experience-item">
+                            <strong>Outcome:</strong> 30fps real-time performance on mobile devices, 5M+ users
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-phase">
+                <h3 class="phase-title">Foundations</h3>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <h4>ML Research Engineer</h4>
+                        <span class="experience-company">Robotics Lab</span>
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-item">
+                            <strong>Problem:</strong> Autonomous drone navigation in GPS-denied environments
+                        </div>
+                        <div class="experience-item">
+                            <strong>Solution:</strong> SLAM-based localization with real-time object detection for obstacle avoidance
+                        </div>
+                        <div class="experience-item">
+                            <strong>Tech:</strong> <span class="tech-badge-sm">ROS</span> <span class="tech-badge-sm">PCL</span> <span class="tech-badge-sm">CUDA</span> <span class="tech-badge-sm">PyTorch</span>
+                        </div>
+                        <div class="experience-item">
+                            <strong>Outcome:</strong> Published research, deployed in field testing
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-label">// FEATURED WORK</div>
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>SHISEIDO Virtual Makeup</h3>
+                        <div class="project-type">Computer Vision • AR</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-problem"><strong>Problem:</strong> Enable virtual try-on of makeup products in real-time through web browsers</p>
+                        <p class="project-solution"><strong>Solution:</strong> Browser-based facial tracking with WebGL-accelerated rendering pipeline for realistic makeup simulation</p>
+                        <div class="project-tech">
+                            <span class="tech-badge-sm">WebGL</span>
+                            <span class="tech-badge-sm">TensorFlow.js</span>
+                            <span class="tech-badge-sm">MediaPipe</span>
+                            <span class="tech-badge-sm">Three.js</span>
+                        </div>
+                        <p class="project-outcome"><strong>Outcome:</strong> Deployed globally, 30fps performance, 5M+ users</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>OttoFly</h3>
+                        <div class="project-type">Robotics • Computer Vision</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-problem"><strong>Problem:</strong> Autonomous drone flight in complex indoor environments</p>
+                        <p class="project-solution"><strong>Solution:</strong> Real-time visual SLAM with object detection for autonomous navigation and obstacle avoidance</p>
+                        <div class="project-tech">
+                            <span class="tech-badge-sm">ROS</span>
+                            <span class="tech-badge-sm">PCL</span>
+                            <span class="tech-badge-sm">YOLO</span>
+                            <span class="tech-badge-sm">C++</span>
+                        </div>
+                        <p class="project-outcome"><strong>Outcome:</strong> Successful autonomous flights, research publication</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Gesture Control System</h3>
+                        <div class="project-type">Computer Vision • HCI</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-problem"><strong>Problem:</strong> Hands-free drone control using natural hand gestures</p>
+                        <p class="project-solution"><strong>Solution:</strong> Real-time hand tracking with gesture recognition using deep learning for intuitive drone control</p>
+                        <div class="project-tech">
+                            <span class="tech-badge-sm">OpenCV</span>
+                            <span class="tech-badge-sm">MediaPipe</span>
+                            <span class="tech-badge-sm">Python</span>
+                            <span class="tech-badge-sm">ROS</span>
+                        </div>
+                        <p class="project-outcome"><strong>Outcome:</strong> 95% gesture recognition accuracy, seamless control interface</p>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Enterprise RAG Platform</h3>
+                        <div class="project-type">LLMs • RAG</div>
+                    </div>
+                    <div class="project-content">
+                        <p class="project-problem"><strong>Problem:</strong> Knowledge retrieval across millions of enterprise documents</p>
+                        <p class="project-solution"><strong>Solution:</strong> Multimodal RAG system with hybrid search, combining dense and sparse retrieval for optimal accuracy</p>
+                        <div class="project-tech">
+                            <span class="tech-badge-sm">LangChain</span>
+                            <span class="tech-badge-sm">Pinecone</span>
+                            <span class="tech-badge-sm">GPT-4</span>
+                            <span class="tech-badge-sm">Azure</span>
+                        </div>
+                        <p class="project-outcome"><strong>Outcome:</strong> 85% accuracy on domain QA, production deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications" class="section publications-section">
+        <div class="container">
+            <div class="section-label">// RESEARCH</div>
+            <h2 class="section-title">Publications</h2>
+
+            <div class="publications-category">
+                <h3 class="category-title">RAG & Knowledge Systems</h3>
+                <div class="publication-card">
+                    <h4 class="publication-title">Efficient Retrieval-Augmented Generation for Long-Form Question Answering</h4>
+                    <p class="publication-takeaway">Hybrid retrieval combining dense embeddings with BM25 improves accuracy by 23% on technical documents</p>
+                    <p class="publication-relevance"><strong>Practical Impact:</strong> Framework adopted in production RAG systems for enterprise search</p>
+                </div>
+                <div class="publication-card">
+                    <h4 class="publication-title">Multi-hop Reasoning in RAG: A Comparative Study</h4>
+                    <p class="publication-takeaway">Chain-of-thought prompting with iterative retrieval outperforms single-step RAG for complex queries</p>
+                    <p class="publication-relevance"><strong>Practical Impact:</strong> Techniques integrated into agent-based document QA systems</p>
+                </div>
+            </div>
+
+            <div class="publications-category">
+                <h3 class="category-title">Multimodal AI</h3>
+                <div class="publication-card">
+                    <h4 class="publication-title">Visual-Linguistic Alignment for Document Understanding</h4>
+                    <p class="publication-takeaway">Layout-aware embeddings improve table extraction accuracy by 34% over text-only approaches</p>
+                    <p class="publication-relevance"><strong>Practical Impact:</strong> Core technique in production document intelligence pipelines</p>
+                </div>
+            </div>
+
+            <div class="publications-category">
+                <h3 class="category-title">Computer Vision</h3>
+                <div class="publication-card">
+                    <h4 class="publication-title">Real-time 3D Object Detection for Autonomous Navigation</h4>
+                    <p class="publication-takeaway">Point cloud-based detection achieves 40ms latency while maintaining 92% mAP</p>
+                    <p class="publication-relevance"><strong>Practical Impact:</strong> Deployed in autonomous drone systems for indoor navigation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section (Output Layer) -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-label">// OUTPUT LAYER</div>
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-content">
+                <p class="system-message">
+                    <span class="status-indicator">●</span> 
+                    System Output Generated Successfully
+                </p>
+                <div class="contact-links">
+                    <a href="mailto:your.email@example.com" class="contact-link" target="_blank">
+                        <span class="link-icon">✉️</span>
+                        <span>your.email@example.com</span>
+                    </a>
+                    <a href="https://github.com/yourusername" class="contact-link" target="_blank">
+                        <span class="link-icon">🔗</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" class="contact-link" target="_blank">
+                        <span class="link-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="#" class="contact-link">
+                        <span class="link-icon">📄</span>
+                        <span>Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Soubhi Hadri. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
